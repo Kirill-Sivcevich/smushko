@@ -1,0 +1,183 @@
+@media screen and (min-width: 600px){
+  selector{
+  transition-property:value;
+  }
+  }
+#wrapper{
+  width: 100%;
+  outline: 1px solid #787274;
+  margin: 0 auto;
+  position: relative;
+  }
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: #ff8f05;
+  padding: 20px 10px;
+}
+.nav {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .nav-item {
+    position: relative;
+    width: 100%;
+  }
+  
+  .nav-item:hover > .subnav {
+    display: block;
+  }
+  
+  .nav-link {
+    display: block;
+    padding: 8px 16px;
+    
+    background-color: #f2c42e;
+    
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+  }
+  
+  .nav-link:hover {
+    background-color: #333;
+  }
+body{
+  display: flex;/*флексбокс сетка*/
+  flex-direction: column;/*направление главной оси*/
+  justify-content: flex-end;/*элементы в конце контейнера*/
+  min-height: 100vh;
+    background-image: url('zheltyj_kapli_fon_164322_3840x2160.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+table{
+  width: 100%;
+}
+.container {
+  border: none;
+  margin: 15px;
+  padding: 10px;
+  width: 400px;
+  
+  font-family: Courier;
+  background: linear-gradient(to right, #e4e95b, #f2c42e);
+  border-radius: 25px;}
+ .present {
+  display: inline-block;
+  margin-left: 20px;
+}
+.present > img {
+  border-radius: 100%;
+  width: 100px;
+  height: 100px;
+  border: 4px solid #ff7300;
+  box-shadow: #aaa 0 0 10px 2px;
+  display: block;
+}
+.present > span {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+}
+
+
+.image-card {
+border: none;
+margin: 0 auto;
+padding: 10px;
+width: 200px;
+text-align: center;
+font-family: Courier;
+background: linear-gradient(to right, #e4e95b, #cda626);
+border-radius: 25px;}
+
+
+.image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.image-card {
+    border: 1px solid #ffffff;
+    margin: 10px;
+    padding: 10px;
+    width: 200px;
+
+    text-align: center;
+  }
+
+
+  footer{
+    position: relative;/*относительное позиционирование*/
+    width: 100%;/*на всю ширину*/
+    padding: 20px 50px;/*поля для контента*/
+    background: #ff8f05;/*цвет футера*/
+    display: flex;
+    justify-content: center;/*в центре по горизонтали*/
+    align-items: center;/*в центре по вертикали*/
+    flex-direction: column;
+    margin-top: 100px;/*отступ сверху*/
+}
+footer .wave{
+    position: absolute;/*абсолютное позиционирование*/
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+ 
+}
+.social,
+.menu{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;/*разрешен перенос на новую строку*/
+}
+.social li,
+.menu li{
+    list-style: none;/*удалить черные маркеры*/
+}
+.social li a {
+    font-size: 2em;/*размер иконок*/
+    color: #fff;/*цвет иконок*/
+    margin: 0 10px;
+    display: inline-block;/*отображать как строчно-блочный элемент*/
+    transition: 0.5s;/*плавный переход*/
+}
+.menu li a {
+    font-size: 1.2em;/*размер ссылок меню*/
+    color: #fff;/*цвет ссылок меню*/
+    opacity: 0.75;/*значение прозрачности*/
+    margin: 0 15px;
+    text-decoration: none;/*ссылка без подчеркивания*/
+    display: inline-block;
+}
+.menu li a:hover {
+    opacity: 1;
+}
+footer p {
+    color: #fff;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 1.1em;
+}
+
+*{
+  margin: 0;/*обнуление отступов*/
+  padding: 0;/*обнуление полей*/
+  box-sizing: border-box;/*метод расчета размеров бокса*/
+  font-family: 'Poppins', sans-serif;/*название шрифта*/
+}
